@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- Book Cover -->
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="180dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:background="#E5E7EB"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Book Title -->
+        <TextView
+            android:id="@+id/detailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book Title"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Author -->
+        <TextView
+            android:id="@+id/detailAuthor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:textSize="17sp"
+            android:textColor="#4B5563"
+            android:gravity="center"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Google Rating -->
+        <TextView
+            android:id="@+id/googleRatingText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Google Rating: Not available"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#7C3AED"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Description Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/detailDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Book description"
+            android:textSize="15sp"
+            android:textColor="#374151"
+            android:lineSpacingExtra="4dp"
+            android:layout_marginBottom="18dp" />
+
+        <!-- User Rating Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Rating"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Rating Bar -->
+        <RatingBar
+            android:id="@+id/userRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:rating="0"
+            android:layout_gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Review Input -->
+        <EditText
+            android:id="@+id/reviewInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Write your review..."
+            android:minLines="3"
+            android:gravity="top"
+            android:inputType="textMultiLine"
+            android:padding="12dp"
+            android:textColor="#111827"
+            android:textColorHint="#6B7280"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="14dp" />
+
+        <!-- Save Button -->
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save to My Library"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#EC4899"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remove from My Library"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#EF4444"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Share Book Button -->
+        <Button
+            android:id="@+id/shareBookButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📤 Share Book"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3B82F6"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Community Reviews Heading -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Community Reviews"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Community Reviews Container -->
+        <LinearLayout
+            android:id="@+id/communityReviewsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="sendButton" type="id" />
+    <item name="messageInput" type="id" />
+    <item name="chatBox" type="id" />
+</resources>
